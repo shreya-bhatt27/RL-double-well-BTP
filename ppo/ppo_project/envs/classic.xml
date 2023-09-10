@@ -1,0 +1,14 @@
+<mujoco>
+  <asset>
+    <material name="floor" texture="checks" texrepeat="16 16" texuniform="true"/>
+    <texture name="checks" builtin="checker" type='2d' width='256' height='256' rgb1 = "1 1 1" rgb2="0 0 0"/>
+  </asset>
+  <worldbody>
+    <light name="top" pos="0 0 1"/>
+    <geom name="hill" type="ellipsoid" pos="0.0 0.0 0.0" size=".1 .1 0.2" material="floor"/>
+    <body pos="0.05 0.0 0.3">
+      <joint type="free"/>
+      <geom type="sphere" size=".02" rgba="0 1 0 1"/>
+    </body>
+  </worldbody>
+</mujoco>
